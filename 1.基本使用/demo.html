@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello Javascript</title>
+</head>
+<body>
+
+	<!--JavaScript运行顺序与iOS类似，从上至下依次运行代码-->
+	<!--以下代码 先在浏览器页面显示“欢迎来到JavaScript世界”，然后再弹出“欢迎来到JavaScript世界”-->
+	<!--
+	欢迎来到Javascript世界
+	<script type="text/javascript">
+		alert("欢迎来到JavaScript世界")
+	</script>
+
+	<!--以下代码 先在弹出“欢迎来到JavaScript世界，点击确认后，再在浏览器显示“欢迎来到JavaScript世界”-->
+	<!--
+	<script type="text/javascript">
+		alert("欢迎来到JavaScript世界")
+	</script>
+	欢迎来到Javascript世界
+
+	<!--以下代码 如果你想打印或弹出</script>标签 是不可弹出的 因为运行到alert("</script>")的时候，它监测到有</script>标签，就以为结束了”-->
+	<!--
+	<script type="text/javascript">
+		alert("</script>")
+	</script>
+
+	<!--以下代码 如果你想打印或弹出</script>标签 需要使用字符串相加的形式 字符串相加的语法与Swift一样”-->
+	<!--
+	<script type="text/javascript">
+		alert("</scr"+"ipt>")
+	</script>
+
+	<!-- 范例：一般来说，JS代码越来越庞大的时候，我们最好把它另外存为一个.js文件，通过src引入即可，它还具有维护性高、可缓存（加载一次，无需加载）、方便未来拓展的优点。-->
+	<script type="text/javascript" src="demo.js"></script>
+
+</body>
+</html>

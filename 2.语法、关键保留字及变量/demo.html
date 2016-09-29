@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>语法、关键保留字及变量</title>
+	<script type="text/javascript" src="demo.js"></script>
+</head>
+<body>
+
+	<!--ECMAScript是个标准, 为了统一JS这门语言的语法。
+	ECMAScript和JS不完全一样，JS包含：
+	1、ECMAScript标准
+	2、DOM文档对象
+	3、BOM浏览器对象
+	-->
+
+
+	// JS是弱类型语言
+
+	区分大小写：text和Text是两种不同的标示符 
+	标示符组成开头：a(字母)、_(下划线)、 $ 
+	其他组成：a(字母)、_(下划线)、$、数字 
+	不能把关键字，保留字，true、false、null作为标示符
+	正确式例：myName、book123
+
+	JS的注释：// 注释内容 (和iOS中的注释方法相同，包括多行注释等) 
+	HTML的注释：<!--注释内容-->
+
+	// 字面量
+	所谓直接量(字面量)，就是程序中直接显示出来的数据值
+	100				// 数字字面量
+	'李炎恢'			// 字符串字面量
+	false			// 布尔字面量
+	/js/gi			// 正则表达式字面量
+	null			// 对象字面量	
+
+	(x:1,y:2) 		// 对象字面量表达式
+	[1,2,3,4,5]		// 数组字面量表达式
+
+	// 关键字：是程序中已经开始使用的字符
+	break else new var case finally return void catch for switch while
+	continue function this with default if throw delete in try do instanceof typeof
+
+	// 保留字：很可能在将来被转化成关键字
+	abstract enum int short boolean export interface static byte extends long super
+	clear final native synchronized class float package throws const goto private transient
+	debugger implements protected volatile double import public
+
+</body>
+</html>
