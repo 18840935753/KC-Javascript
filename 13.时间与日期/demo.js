@@ -1,4 +1,4 @@
- alert("第十三章");
+alert("第十三章");
 
  // 创建一个日期对象
  // ()构造方法里面可以传参数，指定时间，如果没有传，就是默认当前时间
@@ -76,15 +76,3 @@
  //分别获取年 月 日 时 分 秒
  var box = new Date();
  alert(box.getFullYear()+"-"+box.getMonth()+"-"+box.getDate()+" "+box.getHours()+":"+box.getMinutes()+":"+box.getSeconds());
-
-
-
-
-
-
-
-
-
-
-
-
