@@ -51,6 +51,12 @@ var str = '18840935753@163.com';
 alert(pattern.test(str));
 
 
+// 下面代码需要注意一点 (zip|rar|gz) 最好是带上()  否则智慧匹配打一个zip
+var pattern = /^[\w]+\.(zip|rar|gz)$/;
+var str = '123.zip';
+alert(pattern.exec(str));
+
+
 
 
 
